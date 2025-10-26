@@ -1,178 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Haritha K N | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" src="assets/css/styles.css">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
-/* ===== Typing animations ===== */
-body {
-  background: linear-gradient(180deg, #120F1F, #1B1630);
-}
-nav a {
-  position: relative;
-}
-nav a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color: #b284ff;
-  transition: width 0.3s;
-}
-nav a:hover::after {
-  width: 100%;
-}
+    /* ===== Typing animations ===== */
+    body {
+      background: linear-gradient(180deg, #100d1b, #1B1630);
+      background-color: #15121e;
+    }
 
-.typing1, .typing2 {
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid #b284ff;
-}
+    nav a {
+      position: relative;
+    }
 
-.typing1 {
-  display: inline-block;
-  animation: typing1 2.5s steps(20) 0.5s forwards, blink 0.7s infinite;
-}
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #b284ff;
+      transition: width 0.3s;
+    }
 
-.typing2 {
-  display: block;
-  width: 0;
-  opacity: 0;
-  font-size: 1.25rem; /* ↓ smaller text size */
-  font-weight: 500;   /* optional: make it lighter */
-  color: #d0b6ff;     /* softer purple if you want */
-  animation: typing2 2.5s steps(22) 3.2s forwards, blink 0.7s infinite 3.2s;
-}
+    nav a:hover::after {
+      width: 100%;
+    }
 
-h1 {
-  white-space: nowrap;       /* Prevents text from breaking to next line */
-  overflow: visible;         /* Makes sure last letter isn't clipped */
-}
+    .typing1,
+    .typing2 {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid #b284ff;
+    }
 
-.hero-text h1, 
-.hero-content h1 {
-  display: inline-block;     /* Ensures width fits text */
-  letter-spacing: 1px;       /* Optional: improves readability */
-  padding-right: 10px;       /* Prevents cut-off edges */
-}
-.hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: visible;   /* Important: avoid cutting the text */
-}
-.typed-cursor {
-  display: inline-block;
-}
+    .typing1 {
+      display: inline-block;
+      animation: typing1 2.5s steps(20) 0.5s forwards, blink 0.7s infinite;
+    }
 
-@keyframes typing1 {
-  from { width: 0; }
-  to { width: 14ch; }
-}
+    .typing2 {
+      display: block;
+      width: 0;
+      opacity: 0;
+      font-size: 1.25rem;
+      /* ↓ smaller text size */
+      font-weight: 500;
+      /* optional: make it lighter */
+      color: #d0b6ff;
+      /* softer purple if you want */
+      animation: typing2 2.5s steps(22) 3.2s forwards, blink 0.7s infinite 3.2s;
+    }
 
-@keyframes typing2 {
-  from { width: 0; opacity: 1; }
-  to { width: 22ch; opacity: 1; }
-}
+    h1 {
+      white-space: nowrap;
+      /* Prevents text from breaking to next line */
+      overflow: visible;
+      /* Makes sure last letter isn't clipped */
+    }
 
-@keyframes blink {
-  50% { border-color: transparent; }
-}
+    .hero-text h1,
+    .hero-content h1 {
+      display: inline-block;
+      /* Ensures width fits text */
+      letter-spacing: 1px;
+      /* Optional: improves readability */
+      padding-right: 10px;
+      /* Prevents cut-off edges */
+    }
+
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow: visible;
+      /* Important: avoid cutting the text */
+    }
+
+    .typed-cursor {
+      display: inline-block;
+    }
+
+    @keyframes typing1 {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 14ch;
+      }
+    }
+
+    @keyframes typing2 {
+      from {
+        width: 0;
+        opacity: 1;
+      }
+
+      to {
+        width: 22ch;
+        opacity: 1;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
 
 
 
-/* ===== Rising card animation ===== */
-.fade-up {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease-out;
-}
+    /* ===== Rising card animation ===== */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
 
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-/* ===== Hover glow effect ===== */
-.hover-glow:hover {
-  box-shadow: 0 0 25px rgba(178, 132, 255, 0.4);
-  transform: translateY(-4px);
-  transition: all 0.4s ease;
-}
-</style>
+    /* ===== Hover glow effect ===== */
+    .hover-glow:hover {
+      box-shadow: 0 0 25px rgba(178, 132, 255, 0.4);
+      transform: translateY(-4px);
+      transition: all 0.4s ease;
+    }
+
+    /* Smooth mobile nav dropdown */
+    #navMenu {
+      transition: all 0.3s ease-in-out;
+      transform-origin: top;
+    }
+
+    #navMenu.hidden {
+      opacity: 0;
+      transform: scaleY(0);
+    }
+
+    #navMenu:not(.hidden) {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  </style>
 
 
 </head>
 
-<body class="bg-[#120F1F] text-white font-sans">
+<body class="bg-[#0c0a14] text-white font-sans">
 
   <!-- ===== HEADER ===== -->
-  <header class="flex justify-between items-center px-8 py-4 bg-[#1E1A2B] shadow-md">
-    <h1 class="text-2xl font-bold text-purple-300">HARITHA K N</h1>
-    <nav class="flex flex-wrap items-center justify-between p-4 text-white">
-  <ul class="hidden md:flex gap-6">
+<header class="flex justify-between items-center px-8 py-4 bg-[#100d1b] shadow-md relative">
+  <h1 class="text-2xl font-bold text-purple-300">HARITHA K N</h1>
+
+  <button id="menuToggle" class="md:hidden text-[#b284ff] text-3xl focus:outline-none">☰</button>
+
+  <ul id="navMenu"
+    class="hidden md:flex flex-col md:flex-row gap-6 bg-[#15121e] md:bg-transparent absolute md:static top-16 left-0 w-full md:w-auto px-6 py-4 md:p-0 rounded-lg shadow-md md:shadow-none z-50 transition-all duration-300 ease-in-out transform origin-top">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#footer">Contacts</a></li>
   </ul>
-  <button class="md:hidden text-[#b284ff] text-2xl">☰</button>
-</nav>
+</header>
 
-  </header>
 
   <!-- ===== HERO SECTION ===== -->
- <section id="home"
-  class="flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-16 py-20 bg-[#16122A] text-white text-center md:text-left gap-10">
+  <section id="home"
+    class="flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-16 py-20 bg-[#100d1b] text-white text-center md:text-left gap-10">
 
-  <!-- LEFT TEXT -->
-  <div class="max-w-xl">
-    <h2 class="text-3xl sm:text-4xl font-bold text-purple-300">
-  <span class="typing1">I’m Haritha K N</span>
-  <span class="typing2 text-gray-200 ml-2">Full-Stack Developer</span>
-</h2>
+    <!-- LEFT TEXT -->
+    <div class="max-w-xl">
+      <h2 class="text-3xl sm:text-4xl font-bold text-purple-300">
+        <span class="typing1">I’m Haritha K N</span>
+        <span class="typing2 text-gray-200 ml-2">Full-Stack Developer</span>
+      </h2>
 
-    <p class="mt-4 text-gray-400 leading-relaxed text-sm sm:text-base">
-      I craft efficient, scalable web applications that blend performance with elegant design. 
-      Passionate about building digital experiences that are both functional and visually engaging.
-    </p>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=knharithahkn@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Haritha,%0D%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you."
-   target="_blank"
-   class="inline-block mt-6 px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg shadow-md transition text-sm sm:text-base">
-   Hire Me
-</a>
+      <p class="mt-4 text-gray-400 leading-relaxed text-sm sm:text-base">
+        I craft efficient, scalable web applications that blend performance with elegant design.
+        Passionate about building digital experiences that are both functional and visually engaging.
+      </p>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=knharithahkn@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Haritha,%0D%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you."
+        target="_blank"
+        class="inline-block mt-6 px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg shadow-md transition text-sm sm:text-base">
+        Hire Me
+      </a>
 
 
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="flex justify-center md:justify-end w-full md:w-auto">
+      <img src="assets/images/profile.jpeg" alt="Profile"
+        class="w-40 sm:w-48 md:w-56 lg:w-60 xl:w-64 h-40 sm:h-48 md:h-56 lg:h-60 xl:h-64 rounded-full border-4 border-purple-300 shadow-lg object-cover">
+
+    </div>
+
+  </section>
+  <div class="flex flex-wrap justify-center gap-8 mt-10 opacity-90">
+    <img src="assets/images/html.png" class="w-10 hover:scale-110 transition" title="HTML" />
+    <img src="assets/images/css.png" class="w-10 hover:scale-110 transition" title="CSS" />
+    <img src="assets/images/js.png" class="w-10 hover:scale-110 transition" title="JavaScript" />
+    <img src="assets/images/react.png" class="w-10 hover:scale-110 transition" title="React" />
+    <img src="assets/images/python.png" class="w-10 hover:scale-110 transition" title="Python" />
+    <img src="assets/images/djano.svg" class="w-10 hover:scale-110 transition" title="Django" />
   </div>
-
-  <!-- RIGHT IMAGE -->
-  <div class="flex justify-center md:justify-end w-full md:w-auto">
-    <img src="assets/images/profile.jpeg" alt="Profile"
-  class="w-40 sm:w-48 md:w-56 lg:w-60 xl:w-64 h-40 sm:h-48 md:h-56 lg:h-60 xl:h-64 rounded-full border-4 border-purple-300 shadow-lg object-cover">
-
-  </div>
-
-</section>
-<div class="flex flex-wrap justify-center gap-8 mt-10 opacity-90">
-  <img src="assets/images/html.png" class="w-10 hover:scale-110 transition" title="HTML" />
-  <img src="assets/images/css.png" class="w-10 hover:scale-110 transition" title="CSS" />
-  <img src="assets/images/js.png" class="w-10 hover:scale-110 transition" title="JavaScript" />
-  <img src="assets/images/react.png" class="w-10 hover:scale-110 transition" title="React" />
-  <img src="assets/images/python.png" class="w-10 hover:scale-110 transition" title="Python" />
-  <img src="assets/images/djano.svg" class="w-10 hover:scale-110 transition" title="Django" />
-</div>
 
 
 
@@ -181,16 +226,18 @@ h1 {
   <!-- ===== ABOUT SECTION ===== -->
   <section id="about" class="px-5 py-10">
     <h2 class="text-3xl font-bold text-center text-purple-400 mb-6">Know Me More</h2>
-    <div class="max-w-6xl mx-auto bg-[#1E1A2B] rounded-2xl p-8 shadow-lg">
+    <div class="max-w-6xl mx-auto bg-[#15121e] rounded-2xl p-8 shadow-lg">
       <p class="text-purple-200 mb-4">
-        I’m Haritha K N, an aspiring Full-Stack Developer passionate about building complete and functional web applications.
+        I’m Haritha K N, an aspiring Full-Stack Developer passionate about building complete and functional web
+        applications.
         I enjoy understanding how every layer of a project connects — from the database structure to the user interface.
       </p>
       <p class="text-purple-200 mb-6">
         While still improving frontend design skills, my strength lies in backend logic and problem-solving.
         I’m currently learning and working with HTML, CSS, Bootstrap, JavaScript, Python, and Django.
       </p>
-      <a href="assets/images/Haritha-K-N-Resume (2).pdf" class="block w-fit mx-auto px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg shadow-md transition">Resume</a>
+      <a href="assets/images/Haritha-K-N-Resume (2).pdf"
+        class="block w-fit mx-auto px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg shadow-md transition">Resume</a>
     </div>
   </section>
 
@@ -199,230 +246,262 @@ h1 {
     <h2 class="text-3xl font-bold text-center text-purple-300 mb-6">Education</h2>
 
     <div class="max-w-6xl mx-auto space-y-6">
-      <div class="bg-[#1E1A2B] p-6 rounded-2xl shadow-md">
+      <div class="bg-[#15121e] p-6 rounded-2xl shadow-md">
         <h3 class="font-semibold text-purple-300">Industrial Training in MERN Stack</h3>
         <p class="text-gray-300">Faith Infosys, Changanassery, Kottayam</p>
-        <p class="text-gray-400 mt-2 text-sm">Gained practical exposure to full-stack web development using MongoDB, Express, React, and Node.js.</p>
+        <p class="text-gray-400 mt-2 text-sm">Gained practical exposure to full-stack web development using MongoDB,
+          Express, React, and Node.js.</p>
       </div>
-      <div class="bg-[#1E1A2B] p-6 rounded-2xl shadow-md">
+      <div class="bg-[#15121e] p-6 rounded-2xl shadow-md">
         <h3 class="font-semibold text-purple-300">Bachelor’s in Computer Science</h3>
         <p class="text-gray-300">Bishop Chulaparambil Memorial College, Kottayam (2022–25)</p>
-        <p class="text-gray-400 mt-2 text-sm">Developed strong fundamentals in programming, database management, and full-stack technologies.</p>
+        <p class="text-gray-400 mt-2 text-sm">Developed strong fundamentals in programming, database management, and
+          full-stack technologies.</p>
       </div>
     </div>
   </section>
-  <section id="services" class="px-10 py-16 bg-[#1E1A2B]">
-  <h2 class="text-3xl font-bold text-center text-purple-400 mb-10">What I Do</h2>
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-    <div class="p-6 bg-[#16122A] rounded-2xl shadow hover-glow transition">
-      <h3 class="text-purple-300 text-lg font-semibold mb-2">Frontend Development</h3>
-      <p class="text-gray-400 text-sm">Building responsive, pixel-perfect UI using React, HTML, CSS, and Bootstrap.</p>
+  <section id="services" class="px-10 py-16 bg-[#15121e]">
+    <h2 class="text-3xl font-bold text-center text-purple-400 mb-10">What I Do</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="p-6 bg-[#16122A] rounded-2xl shadow hover-glow transition">
+        <h3 class="text-purple-300 text-lg font-semibold mb-2">Frontend Development</h3>
+        <p class="text-gray-400 text-sm">Building responsive, pixel-perfect UI using React, HTML, CSS, and Bootstrap.
+        </p>
+      </div>
+      <div class="p-6 bg-[#16122A] rounded-2xl shadow hover-glow transition">
+        <h3 class="text-purple-300 text-lg font-semibold mb-2">Backend Development</h3>
+        <p class="text-gray-400 text-sm">Designing scalable backend systems using Node.js, Express, Django, and
+          databases.</p>
+      </div>
+      <div class="p-6 bg-[#16122A] rounded-2xl shadow hover-glow transition">
+        <h3 class="text-purple-300 text-lg font-semibold mb-2">UI/UX & Design</h3>
+        <p class="text-gray-400 text-sm">Crafting clean, accessible, and interactive designs using Figma and modern CSS.
+        </p>
+      </div>
     </div>
-    <div class="p-6 bg-[#16122A] rounded-2xl shadow hover-glow transition">
-      <h3 class="text-purple-300 text-lg font-semibold mb-2">Backend Development</h3>
-      <p class="text-gray-400 text-sm">Designing scalable backend systems using Node.js, Express, Django, and databases.</p>
-    </div>
-    <div class="p-6 bg-[#16122A] rounded-2xl shadow hover-glow transition">
-      <h3 class="text-purple-300 text-lg font-semibold mb-2">UI/UX & Design</h3>
-      <p class="text-gray-400 text-sm">Crafting clean, accessible, and interactive designs using Figma and modern CSS.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- ===== SKILLS SECTION ===== -->
-<!-- ===== SKILLS SECTION ===== -->
+  <!-- ===== SKILLS SECTION ===== -->
 
-<section id="skills" class="px-10 py-16 bg-[#16122A]"  data-aos="fade-up" data-aos-duration="800">
-  <h2 class="text-3xl font-bold text-center text-purple-400 mb-10">Skills</h2>
+  <section id="skills" class="px-10 py-16 bg-[#16122A]" data-aos="fade-up" data-aos-duration="800">
+    <h2 class="text-3xl font-bold text-center text-purple-400 mb-10">Skills</h2>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-    <!-- HTML -->
-    <div class="flex items-start gap-4 bg-[#1E1A2B] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
-      <img src="assets/images/html.png" alt="HTML" class="w-12 h-12">
-      <div>
-        <h3 class="text-purple-300 font-semibold text-lg">HTML</h3>
-        <p class="text-gray-400 text-sm">Creating structured, accessible web pages using semantic tags.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- HTML -->
+      <div
+        class="flex items-start gap-4 bg-[#15121e] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
+        <img src="assets/images/html.png" alt="HTML" class="w-12 h-12">
+        <div>
+          <h3 class="text-purple-300 font-semibold text-lg">HTML</h3>
+          <p class="text-gray-400 text-sm">Creating structured, accessible web pages using semantic tags.</p>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div
+        class="flex items-start gap-4 bg-[#15121e] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
+        <img src="assets/images/css.png" alt="CSS" class="w-12 h-12">
+        <div>
+          <h3 class="text-purple-300 font-semibold text-lg">CSS</h3>
+          <p class="text-gray-400 text-sm">Styling and aligning layouts; implementing responsive designs with media
+            queries.</p>
+        </div>
+      </div>
+
+      <!-- Bootstrap -->
+      <div
+        class="flex items-start gap-4 bg-[#15121e] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
+        <img src="assets/images/bootstrap.png" alt="Bootstrap" class="w-12 h-12">
+        <div>
+          <h3 class="text-purple-300 font-semibold text-lg">Bootstrap</h3>
+          <p class="text-gray-400 text-sm">Building mobile-friendly layouts quickly using predefined components and grid
+            systems.</p>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div
+        class="flex items-start gap-4 bg-[#15121e] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
+        <img src="assets/images/js.png" alt="JavaScript" class="w-12 h-12">
+        <div>
+          <h3 class="text-purple-300 font-semibold text-lg">JavaScript</h3>
+          <p class="text-gray-400 text-sm">Adding interactivity, handling DOM events, and using ES6 features for cleaner
+            code.</p>
+        </div>
+      </div>
+
+      <!-- React.js -->
+      <div
+        class="flex items-start gap-4 bg-[#15121e] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
+        <img src="assets/images/react.png" alt="React.js" class="w-12 h-12">
+        <div>
+          <h3 class="text-purple-300 font-semibold text-lg">React.js</h3>
+          <p class="text-gray-400 text-sm">Developing reusable components, managing state, and rendering dynamic UIs.
+          </p>
+        </div>
+      </div>
+
+      <!-- Node.js -->
+      <div
+        class="flex items-start gap-4 bg-[#15121e] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
+        <img src="assets/images/node.png" alt="Node.js" class="w-12 h-12">
+        <div>
+          <h3 class="text-purple-300 font-semibold text-lg">Node.js</h3>
+          <p class="text-gray-400 text-sm">Creating backend APIs and handling server-side logic using JavaScript.</p>
+        </div>
+      </div>
+
+      <!-- Express.js -->
+      <div
+        class="flex items-start gap-4 bg-[#15121e] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
+        <img src="assets/images/express.png" alt="Express.js" class="w-12 h-12">
+        <div>
+          <h3 class="text-purple-300 font-semibold text-lg">Express.js</h3>
+          <p class="text-gray-400 text-sm">Developing RESTful APIs with routing and middleware support.</p>
+        </div>
+      </div>
+
+      <!-- MongoDB -->
+      <div
+        class="flex items-start gap-4 bg-[#15121e] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
+        <img src="assets/images/mongodb.png" alt="MongoDB" class="w-12 h-12">
+        <div>
+          <h3 class="text-purple-300 font-semibold text-lg">MongoDB</h3>
+          <p class="text-gray-400 text-sm">Handling NoSQL data efficiently with flexibility and speed.</p>
+        </div>
+      </div>
+
+      <!-- Python -->
+      <div
+        class="flex items-start gap-4 bg-[#15121e] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
+        <img src="assets/images/python.png" alt="Python" class="w-12 h-12">
+        <div>
+          <h3 class="text-purple-300 font-semibold text-lg">Python</h3>
+          <p class="text-gray-400 text-sm">Writing backend logic and scripts for automation and data handling.</p>
+        </div>
+      </div>
+
+      <!-- MySQL -->
+      <div
+        class="flex items-start gap-4 bg-[#15121e] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
+        <img src="assets/images/mysql.png" alt="MySQL" class="w-12 h-12">
+        <div>
+          <h3 class="text-purple-300 font-semibold text-lg">MySQL</h3>
+          <p class="text-gray-400 text-sm">Managing structured data using relational database systems.</p>
+        </div>
+      </div>
+
+      <!-- Git -->
+      <div
+        class="flex items-start gap-4 bg-[#15121e] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
+        <img src="assets/images/git.png" alt="Git" class="w-12 h-12">
+        <div>
+          <h3 class="text-purple-300 font-semibold text-lg">Git</h3>
+          <p class="text-gray-400 text-sm">Version control for committing, pushing, and collaborating effectively.</p>
+        </div>
+      </div>
+
+      <!-- Figma -->
+      <div
+        class="flex items-start gap-4 bg-[#15121e] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
+        <img src="assets/images/figma.png" alt="Figma" class="w-12 h-12">
+        <div>
+          <h3 class="text-purple-300 font-semibold text-lg">Figma</h3>
+          <p class="text-gray-400 text-sm">Creating modern UI designs and interactive prototypes efficiently.</p>
+        </div>
       </div>
     </div>
-
-    <!-- CSS -->
-    <div class="flex items-start gap-4 bg-[#1E1A2B] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
-      <img src="assets/images/css.png" alt="CSS" class="w-12 h-12">
-      <div>
-        <h3 class="text-purple-300 font-semibold text-lg">CSS</h3>
-        <p class="text-gray-400 text-sm">Styling and aligning layouts; implementing responsive designs with media queries.</p>
-      </div>
-    </div>
-
-    <!-- Bootstrap -->
-    <div class="flex items-start gap-4 bg-[#1E1A2B] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
-      <img src="assets/images/bootstrap.png" alt="Bootstrap" class="w-12 h-12">
-      <div>
-        <h3 class="text-purple-300 font-semibold text-lg">Bootstrap</h3>
-        <p class="text-gray-400 text-sm">Building mobile-friendly layouts quickly using predefined components and grid systems.</p>
-      </div>
-    </div>
-
-    <!-- JavaScript -->
-    <div class="flex items-start gap-4 bg-[#1E1A2B] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
-      <img src="assets/images/js.png" alt="JavaScript" class="w-12 h-12">
-      <div>
-        <h3 class="text-purple-300 font-semibold text-lg">JavaScript</h3>
-        <p class="text-gray-400 text-sm">Adding interactivity, handling DOM events, and using ES6 features for cleaner code.</p>
-      </div>
-    </div>
-
-    <!-- React.js -->
-    <div class="flex items-start gap-4 bg-[#1E1A2B] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
-      <img src="assets/images/react.png" alt="React.js" class="w-12 h-12">
-      <div>
-        <h3 class="text-purple-300 font-semibold text-lg">React.js</h3>
-        <p class="text-gray-400 text-sm">Developing reusable components, managing state, and rendering dynamic UIs.</p>
-      </div>
-    </div>
-
-    <!-- Node.js -->
-    <div class="flex items-start gap-4 bg-[#1E1A2B] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
-      <img src="assets/images/node.png" alt="Node.js" class="w-12 h-12">
-      <div>
-        <h3 class="text-purple-300 font-semibold text-lg">Node.js</h3>
-        <p class="text-gray-400 text-sm">Creating backend APIs and handling server-side logic using JavaScript.</p>
-      </div>
-    </div>
-
-    <!-- Express.js -->
-    <div class="flex items-start gap-4 bg-[#1E1A2B] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
-      <img src="assets/images/express.png" alt="Express.js" class="w-12 h-12">
-      <div>
-        <h3 class="text-purple-300 font-semibold text-lg">Express.js</h3>
-        <p class="text-gray-400 text-sm">Developing RESTful APIs with routing and middleware support.</p>
-      </div>
-    </div>
-
-    <!-- MongoDB -->
-    <div class="flex items-start gap-4 bg-[#1E1A2B] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
-      <img src="assets/images/mongodb.png" alt="MongoDB" class="w-12 h-12">
-      <div>
-        <h3 class="text-purple-300 font-semibold text-lg">MongoDB</h3>
-        <p class="text-gray-400 text-sm">Handling NoSQL data efficiently with flexibility and speed.</p>
-      </div>
-    </div>
-
-    <!-- Python -->
-    <div class="flex items-start gap-4 bg-[#1E1A2B] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
-      <img src="assets/images/python.png" alt="Python" class="w-12 h-12">
-      <div>
-        <h3 class="text-purple-300 font-semibold text-lg">Python</h3>
-        <p class="text-gray-400 text-sm">Writing backend logic and scripts for automation and data handling.</p>
-      </div>
-    </div>
-
-    <!-- MySQL -->
-    <div class="flex items-start gap-4 bg-[#1E1A2B] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
-      <img src="assets/images/mysql.png" alt="MySQL" class="w-12 h-12">
-      <div>
-        <h3 class="text-purple-300 font-semibold text-lg">MySQL</h3>
-        <p class="text-gray-400 text-sm">Managing structured data using relational database systems.</p>
-      </div>
-    </div>
-
-    <!-- Git -->
-    <div class="flex items-start gap-4 bg-[#1E1A2B] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
-      <img src="assets/images/git.png" alt="Git" class="w-12 h-12">
-      <div>
-        <h3 class="text-purple-300 font-semibold text-lg">Git</h3>
-        <p class="text-gray-400 text-sm">Version control for committing, pushing, and collaborating effectively.</p>
-      </div>
-    </div>
-
-    <!-- Figma -->
-    <div class="flex items-start gap-4 bg-[#1E1A2B] p-5 rounded-2xl shadow-md hover:shadow-lg transition fade-up hover-glow">
-      <img src="assets/images/figma.png" alt="Figma" class="w-12 h-12">
-      <div>
-        <h3 class="text-purple-300 font-semibold text-lg">Figma</h3>
-        <p class="text-gray-400 text-sm">Creating modern UI designs and interactive prototypes efficiently.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- ===== PROJECTS SECTION ===== -->
   <section id="projects" class="px-10 py-16">
     <h2 class="text-3xl font-bold text-center text-purple-400 mb-8">Projects</h2>
     <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-      <div class="bg-[#1E1A2B] p-6 rounded-2xl shadow-md fade-up hover-glow transition">
+      <div class="bg-[#15121e] p-6 rounded-2xl shadow-md fade-up hover-glow transition">
         <img src="assets/images/Screenshot (211).png" alt="Project" class="rounded-lg mb-4">
         <h3 class="text-xl font-semibold text-purple-300">Bugzilla</h3>
         <p class="text-gray-300 text-sm mt-1">Tech Stack: MERN Stack</p>
-        <p class="text-gray-400 text-sm mt-2">A full-stack bug tracking application designed for managing development tasks efficiently.</p>
+        <p class="text-gray-400 text-sm mt-2">A full-stack bug tracking application designed for managing development
+          tasks efficiently.</p>
         <!-- <a href="#" class="inline-block mt-4 px-5 py-2 bg-purple-500 hover:bg-purple-600 rounded-lg text-sm transition">View Demo</a> -->
       </div>
 
-      <div class="bg-[#1E1A2B] p-6 rounded-2xl shadow-md fade-up hover-glow transition">
+      <div class="bg-[#15121e] p-6 rounded-2xl shadow-md fade-up hover-glow transition">
         <img src="assets/images/moonlit.png" alt="Project" class="rounded-lg mb-4">
         <h3 class="text-xl font-semibold text-purple-300">MooonlitBites:Home baker</h3>
         <p class="text-gray-300 text-sm mt-1">Tech Stack: Django,MySQL</p>
-        <p class="text-gray-400 text-sm mt-2">A platform for cake lovers to order cakes on their special day from a baker and get the deliver odne.</p>
+        <p class="text-gray-400 text-sm mt-2">A platform for cake lovers to order cakes on their special day from a
+          baker and get the deliver odne.</p>
         <!-- <a href="#" class="inline-block mt-4 px-5 py-2 bg-purple-500 hover:bg-purple-600 rounded-lg text-sm transition">View Demo</a> -->
       </div>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
-<footer class="text-center py-6 bg-[#1E1A2B] text-gray-400">
-  <div class="flex justify-center gap-6 text-2xl mb-3">
-    <a href="https://github.com/knharitha" target="_blank" class="hover:text-white transition">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/haritha-k-n-99b874316/" target="_blank" class="hover:text-white transition">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://instagram.com/har_it_ha" target="_blank" class="hover:text-white transition">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="mailto:knahrithahkn@gmail.com" class="hover:text-white transition">
-      <i class="fas fa-envelope"></i>
-    </a>
-  </div>
+  <footer class="text-center py-6 bg-[#15121e] text-gray-400">
+    <div class="flex justify-center gap-6 text-2xl mb-3">
+      <a href="https://github.com/knharitha" target="_blank" class="hover:text-white transition">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/haritha-k-n-99b874316/" target="_blank" class="hover:text-white transition">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://instagram.com/har_it_ha" target="_blank" class="hover:text-white transition">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailto:knahrithahkn@gmail.com" class="hover:text-white transition">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
 
-  <p class="text-sm">
-    © 2025 <span class="text-purple-400 font-semibold">Haritha K N</span> | Full-Stack Developer
-  </p>
+    <p class="text-sm">
+      © 2025 <span class="text-purple-400 font-semibold">Haritha K N</span> | Full-Stack Developer
+    </p>
 
-  <p class="text-xs mt-1">
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=knharithahkn@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Haritha,%0D%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you."
-   target="_blank" class="text-purple-400 hover:underline">
-      knharithahkn@gmail.com
-    </a>
-
-
-  </p>
-</footer>
+    <p class="text-xs mt-1">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=knharithahkn@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Haritha,%0D%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you."
+        target="_blank" class="text-purple-400 hover:underline">
+        knharithahkn@gmail.com
+      </a>
 
 
+    </p>
+  </footer>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const fadeUps = document.querySelectorAll(".fade-up");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target); // Animate only once
-      }
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const fadeUps = document.querySelectorAll(".fade-up");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target); // Animate only once
+          }
+        });
+      }, { threshold: 0.2 });
+
+      fadeUps.forEach(card => observer.observe(card));
     });
-  }, { threshold: 0.2 });
+    const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
 
-  fadeUps.forEach(card => observer.observe(card));
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("hidden");
+  menuToggle.textContent = navMenu.classList.contains("hidden") ? "☰" : "✖";
 });
-</script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-<script>AOS.init();</script>
+
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script>AOS.init();</script>
 
 
 </body>
+
 </html>
