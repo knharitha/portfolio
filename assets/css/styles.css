@@ -1,0 +1,31 @@
+#home {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  background-color: #16122A;
+  color: white;
+}
+/* 
+#home img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #c084fc;
+  object-fit: cover;
+} */
+
+img {
+  border-radius: 50%;
+  border: 4px solid #c084fc;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  #home {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
